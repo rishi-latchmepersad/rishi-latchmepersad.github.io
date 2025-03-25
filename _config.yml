@@ -21,16 +21,17 @@ domain: rishi-latchmepersad.github.io
 url: https://rishi-latchmepersad.github.io
 title: Portfolio of Rishi Latchmepersad
 email: latchmepersad@gmail.com
+avatar: leaves.png
 description: >- # this means to ignore newlines until "baseurl:"
-  Hi, I'm Rishi 🙂
-  I'm a software engineer who has worked on enterprise software at both Telecoms and Energy companies.
+  Hi, I'm Rishi 🙂<br>
+  I'm a software engineer who has worked on enterprise software at both Telecoms and Energy companies.<br>
   Right now I'm interested in transitioning to embedded software.
 baseurl: "" # the subpath of your site, e.g. /blog
 linkedin_username: rishi-latchmepersad
 github_username:  rishi-latchmepersad
 
 # Build settings
-remote_theme: pages-themes/cayman@v0.2.0
+theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
