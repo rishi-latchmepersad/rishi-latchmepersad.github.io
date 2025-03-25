@@ -22,14 +22,15 @@ url: https://rishi-latchmepersad.github.io
 title: Portfolio of Rishi Latchmepersad
 email: latchmepersad@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  This is a portfolio of interesting projects by me (Rishi Latchmepersad). I am a software engineer
-  who has worked at Telecoms and Energy companies, and I am currently transitioning to embedded software engineering.
+  Hi, I'm Rishi.
+  I am a software engineer who has worked at Telecoms and Energy companies.
+  Right now I'm interested in embedded software, but I am always learning new things.
 baseurl: "" # the subpath of your site, e.g. /blog
 linkedin_username: rishi-latchmepersad
 github_username:  rishi-latchmepersad
 
 # Build settings
-remote_theme: pages-themes/merlot@v0.2.0
+remote_theme: pages-themes/cayman@v0.2.0
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
