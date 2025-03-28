@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Portfolio & Interesting Projects"
+title                    : "Chronicles of Rishi"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Rishi Latchmepersad"
@@ -67,8 +67,8 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-  hide                   : # true, false (default)
-search                   : # true, false (default)
+  hide                   : true #, false (default)
+search                   : true #, false (default)
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
 lunr:
@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "Rishi Latchmepersad"
   avatar           : "/assets/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "A simple software engineer. I'm currently studying embedded systems."
+  bio              : "A simple software engineer with big dreams. I'm currently studying embedded systems."
   location         : "Trinidad & Tobago"
   email            :
   links:
@@ -324,5 +324,8 @@ defaults:
       author_profile: true
       read_time: true
       comments: # true
-      share: true
-      related: true
+      share: false
+      related: false
+      show_date: true
+      enable_copy_code_button: true
+
