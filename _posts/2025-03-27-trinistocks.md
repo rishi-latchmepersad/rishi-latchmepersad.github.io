@@ -4,8 +4,10 @@ When COVID-19 came around, I had just started a new job at Digicel Trinidad & To
 
 I was working hard to learn the new job, but I also had some extra time at home.
 
-I decided that I was going to use the time to learn something new. The first thing that I could think of was programming. Since I knew that most people
-in the networking industry were using Python, I decided to start by trying that.
+I decided that I was going to use the time to learn something new. The first thing that I could think of was re-learning programming. 
+I had some previous history in software using languages such as C++, C# and Java for some previous projects (including TINQA, my undergrad project), but I 
+had stopped programming for a few years since I had originally decided to work in networking. Since I knew that most people
+in the networking industry were using Python, I decided to continue my programming career by learning Python.
 
 ![Python image](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHo3MzdsNmdqZHBhODN0cDkxcDRnZmJzOTlsd2p2NXl4aXhyNzNyZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KAq5w47R9rmTuvWOWa/giphy.gif){: width="150" }
 
