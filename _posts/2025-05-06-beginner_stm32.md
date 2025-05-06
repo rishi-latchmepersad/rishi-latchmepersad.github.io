@@ -6,6 +6,8 @@ While in Japan, I bought an STM32 Nucleo F767ZI board. This is a medium sized bo
 
 ![STM32 board](/assets/posts/2025-05-06-beginner_stm32/board.jpg){: width="250" }
 
+Most of the STM32 Nucleo boards seem to be very similar, so I believe you can start with anything that's available in your area.
+
 The only boards I used before this were some Xilinx FPGA boards in my undergraduate degree, and a few Raspberry Pi boards.
 
 It was a small journey to refresh myself on these types of systems, because I haven't done this type of work in almost 10 years!
