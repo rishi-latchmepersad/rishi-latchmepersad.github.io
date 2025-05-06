@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Beginning My STM32 Journey!"
+title: Beginning My STM32 Journey!
 ---
 
 While in Japan, I bought an STM32 Nucleo F767ZI board. This is a medium sized board that seems to be perfect for learning so far.
