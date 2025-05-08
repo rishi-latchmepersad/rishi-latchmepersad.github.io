@@ -19,7 +19,7 @@ The channel that made this video is called <a href="https://www.youtube.com/@CMT
 
 Chad explains things really well. I was able to follow the first few videos from him to understand the STM32CubeIDE.
 
-![STM32CubeIDE](/assets/posts/2025-05-06-beginner_stm32/stm32cubeide.PNG){: width="250" }
+![STM32CubeIDE](/assets/posts/2025-05-06-beginner_stm32/stm32cubeide.PNG){: width="250" :target="_blank"}
 
 I completed the first 4 videos, which walked me through the basic setup of STM32CubeIDE, and a few basic steps to
 flash an LED, and use a button toggle to change the state of the LED.
