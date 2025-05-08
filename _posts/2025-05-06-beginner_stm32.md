@@ -4,7 +4,7 @@ title: Beginning My STM32 Journey!
 
 While in Japan, I bought an STM32 Nucleo F767ZI board. This is a medium sized board that seems to be perfect for learning so far.
 
-![STM32 board](/assets/posts/2025-05-06-beginner_stm32/board.jpg){: width="250" }
+[![STM32 board](/assets/posts/2025-05-06-beginner_stm32/board.jpg){: width="350" }](/assets/posts/2025-05-06-beginner_stm32/board.jpg)
 
 Most of the STM32 Nucleo boards seem to be very similar, so I believe you can start with anything that's available in your area.
 
@@ -19,7 +19,7 @@ The channel that made this video is called <a href="https://www.youtube.com/@CMT
 
 Chad explains things really well. I was able to follow the first few videos from him to understand the STM32CubeIDE.
 
-[![STM32CubeIDE](/assets/posts/2025-05-06-beginner_stm32/stm32cubeide.PNG){: width="250" :target="_blank"}](/assets/posts/2025-05-06-beginner_stm32/stm32cubeide.PNG)
+[![STM32CubeIDE](/assets/posts/2025-05-06-beginner_stm32/stm32cubeide.PNG){: width="450" :target="_blank"}](/assets/posts/2025-05-06-beginner_stm32/stm32cubeide.PNG)
 
 I completed the first 4 videos, which walked me through the basic setup of STM32CubeIDE, and a few basic steps to
 flash an LED, and use a button toggle to change the state of the LED.
@@ -27,7 +27,7 @@ flash an LED, and use a button toggle to change the state of the LED.
 This seems to be the equivalent of "hello world" in the pure software world. I was really excited to be able to push
 my own code to the board!
 
-![STM32 board with LED and button](/assets/posts/2025-05-06-beginner_stm32/button_and_led_blinking.jpg){: width="250" }
+[![STM32 board with LED and button](/assets/posts/2025-05-06-beginner_stm32/button_and_led_blinking.jpg){: width="350" }](/assets/posts/2025-05-06-beginner_stm32/button_and_led_blinking.jpg)
 
 I was a bit concerned that we were using the HAL library (Hardware Abstraction Layer), instead of writing to registers directly.
 However, as far as I could tell, this is the recommended practice. Why reinvent the wheel right?
