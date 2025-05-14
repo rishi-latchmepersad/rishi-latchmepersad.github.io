@@ -66,7 +66,7 @@ I then modified the code slightly from my previous tutorials to use these pins:
 
 For the circuit, I simply moved the jumper cables to these A0 and A1 pins.
 
-[![GPIO circuit](/assets/posts/2025-05-12-basic_gpio_circuit/gpio_breadboard_circuit.jpg){: width="350" }](/assets/posts/2025-05-12-basic_gpio_circuit/gpio_breadboard_circuit.jpg)
+[![GPIO circuit](/assets/posts/2025-05-12-basic_gpio_circuit/gpio_breadboard_button_circuit.jpg){: width="350" }](/assets/posts/2025-05-12-basic_gpio_circuit/gpio_breadboard_button_circuit.jpg)
 
 I pushed the code, and it actually worked the first time! The LED was on by default. When I pushed the button, the flag got set. Then in the next iteration of the loop after the button was released, 
 the pin was toggled and the LED was turned off, exactly as we expected!
