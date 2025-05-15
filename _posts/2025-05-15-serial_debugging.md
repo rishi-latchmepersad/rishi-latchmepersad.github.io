@@ -7,6 +7,8 @@ Well, that was terrible. I immediately regret feeling so confident in the last p
 I was looking for a tutorial on how to read debug/print statements through the USB cable, since I don't have any other way to read output on the device. I remembered this
 video by a Youtube channel called <a href="https://www.youtube.com/@stm32world">STM32World</a>.
 
+<a href="https://www.youtube.com/watch?v=O6cNvE9ZrVU&list=PLVfOnriB1RjWvYaTSpsqs9Us0NV1-ares&index=54">Serial Debugging Video</a>
+
 He is clearly very experienced in the field, so I was excited to follow through with his videos. Unfortunately, he isn't using an STM32 Nucleo board. Instead he's using a 
 blackpill board.
 
