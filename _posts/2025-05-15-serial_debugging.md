@@ -36,7 +36,7 @@ Once the pins were configured, I was able to get some output on my serial monito
 
 [[!Serial Monitor](/assets/posts/2025-05-15-serial_debugging/serial_monitor.PNG){: width="350" }](/assets/posts/2025-05-15-serial_debugging/serial_monitor.png)
 
-There was one other issue, in that I needed to use \r\t for my endline string, instead of simply \t like he was using. However the code seems really robust now!
+There was one other issue, in that I needed to use  \r\t for my endline string, instead of simply \t like he was using. However the code seems really robust now!
 
 I can call printf anywhere, and actually see the output. This will be really useful for quick debugging in the future!
 
