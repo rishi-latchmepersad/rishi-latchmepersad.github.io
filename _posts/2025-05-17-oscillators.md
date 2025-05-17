@@ -22,6 +22,6 @@ I thought that this was an incorrect baud rate issue, but even after I triple ch
 
 It turned out that my Nucleo board doesn't have an external oscillator. Instead, it uses an internal 16MHz oscillator.
 
-![![STM32CubeMX HSI](/assets/posts/2025-05-15-oscillators/hsi.PNG){: width="350" }](/assets/posts/2025-05-15-oscillators/hsi.PNG)
+![![STM32CubeMX HSI](/assets/posts/2025-05-17-oscillators/hsi.PNG){: width="350" }](/assets/posts/2025-05-15-oscillators/hsi.PNG)
 
 Lars explained that he always uses an external oscillator for higher speeds and precision, but it seems that I'll have to leave mine as internal for now.
