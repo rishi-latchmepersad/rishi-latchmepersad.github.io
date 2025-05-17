@@ -22,7 +22,7 @@ I thought that this was an incorrect baud rate issue, but even after I triple ch
 
 It turned out that my Nucleo board doesn't have an external oscillator. Instead, it uses an internal 16MHz oscillator.
 
-[![STM32CubeMX HSI](/assets/posts/2025-05-17-oscillators/hsi.PNG){: width="350" }](/assets/posts/2025-05-15-oscillators/hsi.PNG)
+[![STM32CubeMX HSI](/assets/posts/2025-05-17-oscillators/hsi.PNG){: width="350" }](/assets/posts/2025-05-17-oscillators/hsi.PNG)
 
 Lars explained that he always uses an external oscillator for higher speeds and precision, but it seems that I'll have to leave mine as internal for now.
 
@@ -41,5 +41,6 @@ He also improved the LED blink code. Instead of using a delay, we used ticks/tim
 
 This is a lot more efficient, and frees up the CPU to be used for other things in the while loop. 
 
-I also realized that the HAL layer has a lot of built-in code. In my first project to blink the LED, we wrote all of the code in main.c
-by hand. Lars walked us through using STM32 CubeIDE to generate a lot of it and take advantage of the built-in code. I'm really looking forward to what he has to teach next.
+I also realized that the HAL layer has a lot of built-in useful functions, and that CubeIDE generates a lot of the code once you select your GPIO etc. 
+In my first project to blink the LED, we wrote all of the code in main.c by hand. Lars walked us through using STM32 CubeIDE to generate a lot of it 
+and take advantage of the built-in code. I'm really looking forward to what he has to teach next.
