@@ -29,4 +29,5 @@ gem "bigdecimal"
 # If you have any other plugins, put them here!
 # Cf. https://jekyllrb.com/docs/plugins/installation/
 group :jekyll_plugins do
+    gem 'jekyll-google_search_console_verification_file'
 end

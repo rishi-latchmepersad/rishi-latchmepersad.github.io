@@ -266,7 +266,12 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-google_search_console_verification_file
 
+# google search
+google_search_console:
+  verification_file_code: c4f91932f3a855e1
+  
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
