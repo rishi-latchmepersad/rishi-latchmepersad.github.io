@@ -20,7 +20,7 @@ Once I had the extension set up in VS code, I created two projects for the two '
 
 For the first 'hello world' project, I connected my board using a regular USB C cable and did a cursory reading to understand a bit about what the project was doing.
 
-I then clicked through the buttons at the bottom of my VS code window (to set up my board, my com port etc.) and once I click the build,flash and monitor button,
+I then clicked through the buttons at the bottom of my VS code window (to set up my board, my com port etc.) and once I clicked the build,flash and monitor button,
 it just worked!
 
 [![Buttons at Bottom](/assets/posts/2025-07-04-starting_esp32/buttons_at_bottom.PNG){: width="600" }](/assets/posts/2025-07-04-starting_esp32/buttons_at_bottom.PNG)
@@ -29,10 +29,6 @@ Emboldened by this immediate success, I set up another project for my 'blinky' e
 The code was also a bit more complicated, since it had a bunch of these precompilation directive blocks:
 
 ```
-#ifdef CONFIG_BLINK_LED_STRIP
-
-static led_strip_handle_t led_strip;
-
 #ifdef CONFIG_BLINK_LED_STRIP
 
 static led_strip_handle_t led_strip;
