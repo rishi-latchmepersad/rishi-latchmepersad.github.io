@@ -38,7 +38,7 @@ static led_strip_handle_t led_strip;
 #endif
 ```
 
-Luckily, most people start their ESP32 journey with these tutorials and I have a fairly standard devkit board from ExpressIf, so I found a thread that
+Luckily, most people start their ESP32 journey with these tutorials and I have a fairly standard devkit board from EspressIf, so I found a thread that
 gave me the required configs:
 
 [![LED Configuration](/assets/posts/2025-07-04-starting_esp32/led_configuration.PNG){: width="600" }](/assets/posts/2025-07-04-starting_esp32/led_configuration.PNG)
