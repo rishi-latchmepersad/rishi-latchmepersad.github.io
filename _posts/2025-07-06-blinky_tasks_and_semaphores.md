@@ -208,3 +208,5 @@ by default.
 This was a huge step for sure!
 
 [![Final Solution](/assets/posts/2025-07-06-blinky_tasks_and_semaphores/final_solution.gif){: width="600" }](/assets/posts/2025-07-06-blinky_tasks_and_semaphores/final_solution.gif)
+
+Next, I want to experiment a bit with a button and interrupts. Look out for it in the future!
