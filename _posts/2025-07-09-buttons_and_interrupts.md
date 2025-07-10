@@ -141,6 +141,6 @@ void button_task(void *pvParameter)
 
 And this was the result:
 
-[![Final Solution](/assets/posts/2025-07-06-blinky_tasks_and_semaphores/final_solution.gif){: width="600" }](/assets/posts/2025-07-06-blinky_tasks_and_semaphores/final_solution.gif)
+[![Final Solution](/assets/posts/2025-07-09-buttons_and_interrupts/buttons_and_interrupts.gif){: width="600" }](/assets/posts/2025-07-09-buttons_and_interrupts/buttons_and_interrupts.gif)
 
 I'm really starting to feel like an embedded engineer now. Before I get into anything more advanced, I want to learn unit testing with the ESP IDF.
