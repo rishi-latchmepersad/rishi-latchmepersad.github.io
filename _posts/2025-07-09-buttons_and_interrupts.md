@@ -139,7 +139,7 @@ void button_task(void *pvParameter)
 
 ```
 
-And this was the result:
+And this was the result!
 
 [![Final Solution](/assets/posts/2025-07-09-buttons_and_interrupts/buttons_and_interrupts.gif){: width="600" }](/assets/posts/2025-07-09-buttons_and_interrupts/buttons_and_interrupts.gif)
 
