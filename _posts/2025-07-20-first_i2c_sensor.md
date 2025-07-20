@@ -58,6 +58,8 @@ to actually get a response from the sensor, and I knew that I hadn't fried it wi
 - After that, I just had to figure out how to store the address for the sensor (using the void interface pointer and typecasting), and
 Deepseek helped me a lot with this (and some further refactoring).
 
+Now I have a FreeRTOS task that configures the sensor, and reads the temperature, humidity and pressure data from it. 
+
 # Next Steps
 
 Next, I want to create two diagrams for the project: A UML and a Block Diagram. I also want to start creating some Unity test cases, 
