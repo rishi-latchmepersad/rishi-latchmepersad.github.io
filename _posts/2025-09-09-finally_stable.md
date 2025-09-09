@@ -31,9 +31,18 @@ Now that the SD card is working, I have deployed the project! See some images be
 
 [![Outside](/assets/posts/2025-09-09-finally_stable/outside_sensors.jpg){: width="600" }](/assets/posts/2025-09-09-finally_stable/outside_sensors.jpg)
 
+This is a picture of the entire setup on a plank of wood outside my first floor patio. I needed to capture raindrops, so the sensor needed to be out from under the roof.
+
 [![Packaging](/assets/posts/2025-09-09-finally_stable/sensor_packaging.jpg){: width="600" }](/assets/posts/2025-09-09-finally_stable/sensor_packaging.jpg)
 
+The picture shows the two containers that I used. The clear container is used to allow the light sensor to read outdoor lighting accurately. The box is used for the main board.
+The box is wrapped in a plastic bag to protect the electronics.
+
 [![Layout](/assets/posts/2025-09-09-finally_stable/sensor_layout.jpg){: width="600" }](/assets/posts/2025-09-09-finally_stable/sensor_layout.jpg)
+
+This pic shows the inside of the box. I regret that I spaced out the sensors so much. I should have put everything on a single breadboard next to the main board and
+put everything inside the clear container. This way, I could flash the external RGB led any colour I wanted, and I would be able to know that the system was working.
+However, I didn't want to completely rearchitect the system, because the main point was data collection, and this was a very temporary system.
 
 # Additional Note (GCC on Windows)
 
