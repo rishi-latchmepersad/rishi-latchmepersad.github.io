@@ -12,7 +12,13 @@ search: false
     background-color: lightseagreen;
 }
 
-.masthead{ background-color: lightseagreen; }
+.masthead{ background-color: lightseagreen;
+color:white;
+}
+
+.greedy-nav{
+    background-color:none;
+}
 
 .page__content{
     font-size:0.8em;
