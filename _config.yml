@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "Rishi Latchmepersad"
   avatar           : "/assets/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "An aspiring embedded/TinyML engineer, with experience in oil/gas & telecomms. Excited to build big ideas into small packages 🎉"
+  bio              : "An aspiring embedded/TinyML researcher & engineer, with experience in oil/gas & telecomms. Excited to build big ideas into small packages 🎉"
   location         : "Trinidad & Tobago"
   email            :
   links:
@@ -138,7 +138,7 @@ author:
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
     - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin-in"
+      icon: "fab fa-fw fa-linkedin"
       url: "https://linkedin.com/in/rishi-latchmepersad"
 
 # Site Footer
