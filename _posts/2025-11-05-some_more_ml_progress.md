@@ -11,6 +11,11 @@ export it as a TFLite file, then import it into STM32 Cube AI to generate the C 
 Cube AI is a package inside of STM32 CubeIDE (CubeMX), which I was able to install fairly easily inside the IDE. It took me a while,
 but I was able to import the TFLite file, and generate the C code by just saving the CubeMX (.ioc) window once I added the file and validated it.
 
+I had some issues with getting the code to generate, and in running the validation at first. The biggest issue was that the linker wasn't able to find
+the .a file. I had to add it here to get it to work:
+
+[![Linker Settings](/assets/posts/2025-11-05-some_more_ml_progress/linker_issue.JPG){: width="600" }](/assets/posts/2025-11-05-some_more_ml_progress/linker_issue.JPG)
+
 I learned that the 'Device Application' box is likely just a demo project, and doesn't need to be selected. With that selected,
 I got a bunch of errors which looked like old version issues. Once I deselected it, I was able to generate the code without any issues!
 
