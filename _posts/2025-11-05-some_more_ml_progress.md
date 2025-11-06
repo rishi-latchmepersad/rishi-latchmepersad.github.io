@@ -40,3 +40,7 @@ it runs.
 In other news, this week has been pretty exciting! I had a hand in recording a video for World Mental Health Day at Shell. Hopefully
 I get featured in the final cut. I also attended a few University Of Calgary events, so I'm learning a bit more about how to apply
 for my masters program. Overall, things are looking up!
+
+I need to take some time to do a few more side tasks. I need to read some research papers from a few professors at uCalgary, and
+decide on which 2-3 I want to email. I also need to draft an email to each of them. Not sure when exactly I should send it.
+Maybe after I finish the first draft of the paper? We'll see.
