@@ -1,7 +1,7 @@
 {
   "files.associations": {
     "*.html": "liquid",
-    "*.md": "liquid"
+    "*.md": "markdown"
   },
   "C_Cpp_Runner.cCompilerPath": "gcc",
   "C_Cpp_Runner.cppCompilerPath": "g++",
