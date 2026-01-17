@@ -12,7 +12,7 @@ I was able to put in my order with Mouser Electronics late last year, and it act
 
 I really had to pay out of my nose for it though. I paid 60$ USD to ship the small box from the US to Trinidad, then another 400$ TTD to clear it here. Hopefully I won't need to order much more equipment here.
 
-![Mouser Order](/assets/posts/2026-01-16-first_post_of_the_year/new_parts.jpg){:width="600"}(/assets/posts/2026-01-16-first_post_of_the_year/new_parts.jpg)
+[![Mouser Order](/assets/posts/2026-01-16-first_post_of_the_year/new_parts.jpg){:width="600"}](/assets/posts/2026-01-16-first_post_of_the_year/new_parts.jpg)
 
 I haven't even opened the packages yet, because I'm waiting to build my foundations a bit more. After the first paper we wrote last year (which we're still reviewing with the journal), I realized that my C foundations and my ML foundations were weak, so I've begun my C programming book (by K.N King) and my computer vision ML course (by Andrej Karpathy).
 
