@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "Rishi Latchmepersad"
   avatar           : "/assets/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "A TinyML researcher & data engineer, with experience in oil/gas & telecomms. Excited to work at the intersection of Energy, AI and Data Foundations 🎉"
+  bio              : "A TinyML researcher & engineer, with experience in oil/gas, computer systems and telecomms. Excited to work at the intersection of Energy, AI and Embedded Systems 🎉"
   location         : "Trinidad & Tobago"
   email            :
   links:
