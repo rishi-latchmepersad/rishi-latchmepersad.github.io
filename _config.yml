@@ -21,8 +21,8 @@ title                    : "Chronicles of Rishi"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Rishi Latchmepersad"
-description              : "My blog of interesting techy things that I work on. Mainly embedded systems and machine learning."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description              : "Personal blog of Rishi Latchmepersad on embedded systems, TinyML, STM32, ESP32, and practical machine learning projects."
+url                      : "https://rishi-latchmepersad.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -333,4 +333,3 @@ defaults:
       related: false
       show_date: true
       enable_copy_code_button: true
-
