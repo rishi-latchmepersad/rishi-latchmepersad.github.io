@@ -1,5 +1,7 @@
 ---
 title: Last Post Of The Year!
+excerpt: "A year-end update on recovering from illness, finishing the first draft of an embedded AI paper, and looking ahead with optimism."
+description: "A year-end update on recovering from illness, finishing the first draft of an embedded AI paper, and looking ahead with optimism."
 ---
 
 # Intro

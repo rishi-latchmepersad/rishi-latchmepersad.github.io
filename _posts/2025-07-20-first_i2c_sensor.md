@@ -1,5 +1,7 @@
 ---
 title: My First I2C Sensor!
+excerpt: "After several days of debugging and soldering, I finally got a BME280 sensor working over I2C on my STM32 F767ZI board."
+description: "After several days of debugging and soldering, I finally got a BME280 sensor working over I2C on my STM32 F767ZI board."
 ---
 
 # Intro

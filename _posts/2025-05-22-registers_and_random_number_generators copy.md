@@ -1,5 +1,6 @@
 ---
 title: Registers & Random Number Generators
+published: false
 ---
 
 

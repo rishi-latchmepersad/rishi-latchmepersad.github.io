@@ -1,5 +1,7 @@
 ---
 title: Final Month Of The Year!
+excerpt: "Fine-tuning a CNN temperature model, dealing with Colab limitations, and noticing how mixed data sources affect prediction accuracy."
+description: "Fine-tuning a CNN temperature model, dealing with Colab limitations, and noticing how mixed data sources affect prediction accuracy."
 ---
 
 # Intro

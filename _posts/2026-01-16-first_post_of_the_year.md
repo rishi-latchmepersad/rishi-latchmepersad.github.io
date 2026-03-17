@@ -1,5 +1,7 @@
 ---
 title: First Post of the Year!
+excerpt: "A new-year update on getting back into embedded systems and ML foundations after receiving new parts from Mouser."
+description: "A new-year update on getting back into embedded systems and ML foundations after receiving new parts from Mouser."
 ---
 
 # Intro

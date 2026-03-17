@@ -1,5 +1,7 @@
 ---
 title: Finally Stable!
+excerpt: "After weeks of debugging intermittent mount failures, the STM32 microSD setup is finally stable enough to read and write reliably."
+description: "After weeks of debugging intermittent mount failures, the STM32 microSD setup is finally stable enough to read and write reliably."
 ---
 
 # Intro

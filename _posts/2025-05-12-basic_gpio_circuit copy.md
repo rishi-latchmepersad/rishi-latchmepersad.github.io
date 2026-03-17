@@ -1,5 +1,6 @@
 ---
 title: GPIO on a Breadboard!
+published: false
 ---
 
 The GPIO on a breadboard turned out to be easier than I expected! I actually didn't use any videos for this. I got a bit brave, and I figured I could combine my knowledge

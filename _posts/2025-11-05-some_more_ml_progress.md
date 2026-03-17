@@ -1,5 +1,7 @@
 ---
 title: Some More ML Progress!
+excerpt: "An update on exporting a TensorFlow Lite model into STM32Cube AI and working through code generation and linker issues."
+description: "An update on exporting a TensorFlow Lite model into STM32Cube AI and working through code generation and linker issues."
 ---
 
 # Intro

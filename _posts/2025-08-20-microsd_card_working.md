@@ -1,5 +1,7 @@
 ---
 title: Finally got a MicroSD Card Working!
+excerpt: "After weeks of troubleshooting, I finally got a microSD card working with an STM32 F767ZI using FatFs and a usable breakout board."
+description: "After weeks of troubleshooting, I finally got a microSD card working with an STM32 F767ZI using FatFs and a usable breakout board."
 ---
 
 # Intro

@@ -1,5 +1,7 @@
 ---
 title: Starting Machine Learning!
+excerpt: "Getting started with a temperature-forecasting ML workflow using Google Colab, open weather data, and plans to deploy to a microcontroller."
+description: "Getting started with a temperature-forecasting ML workflow using Google Colab, open weather data, and plans to deploy to a microcontroller."
 ---
 
 # Intro

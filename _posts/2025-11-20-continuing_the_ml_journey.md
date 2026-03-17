@@ -1,5 +1,7 @@
 ---
 title: Continuing the ML Journey
+excerpt: "A progress update on a temperature-forecasting model that now predicts 15 minutes ahead using a sliding window of past sensor data."
+description: "A progress update on a temperature-forecasting model that now predicts 15 minutes ahead using a sliding window of past sensor data."
 ---
 
 # Intro
