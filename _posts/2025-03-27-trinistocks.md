@@ -1,3 +1,8 @@
+---
+excerpt: "A look back at relearning programming during the COVID era, which eventually led to building TriniStocks and restarting a technical journey."
+description: "A look back at relearning programming during the COVID era, which eventually led to building TriniStocks and restarting a technical journey."
+---
+
 When COVID-19 came around, I had just started a new job at Digicel Trinidad & Tobago. 
 
 ![Covid 19 image](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExajZ4NDdkN2V3OWh2Nm5vOW9id2Q4Nmx0YzVraGNjM21vYnU1d3VoaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/rIlmnpIaVVoxOwD9e0/giphy.gif){: width="150" }

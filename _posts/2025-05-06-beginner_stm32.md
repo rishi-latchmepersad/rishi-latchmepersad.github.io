@@ -1,5 +1,7 @@
 ---
 title: Beginning My STM32 Journey!
+excerpt: "Starting the STM32 journey with a Nucleo F767ZI board and refreshing embedded systems knowledge after years away from the field."
+description: "Starting the STM32 journey with a Nucleo F767ZI board and refreshing embedded systems knowledge after years away from the field."
 ---
 
 While in Japan, I bought an STM32 Nucleo F767ZI board. This is a medium sized board that seems to be perfect for learning so far.

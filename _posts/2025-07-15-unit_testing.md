@@ -1,5 +1,7 @@
 ---
 title: Unit Testing
+excerpt: "Researching embedded testing workflows on ESP32, from Pytest setup pain points to what a practical testing stack might look like."
+description: "Researching embedded testing workflows on ESP32, from Pytest setup pain points to what a practical testing stack might look like."
 ---
 
 I spent the last week or so researching testing in the embedded world. There's definitely a ton of depth in this field, and I know that there are folks spending their entire

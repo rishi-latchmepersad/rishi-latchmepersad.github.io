@@ -1,5 +1,7 @@
 ---
 title: PWM (Pulse Width Modulation) and DAC (Digital to Analog Conversion)
+excerpt: "Working through PWM and DAC concepts on STM32, including sine-wave generation and the complications of bringing in CMSIS-DSP."
+description: "Working through PWM and DAC concepts on STM32, including sine-wave generation and the complications of bringing in CMSIS-DSP."
 ---
 
 

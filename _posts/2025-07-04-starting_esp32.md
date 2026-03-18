@@ -1,5 +1,7 @@
 ---
 title: Starting with the ESP32-C6
+excerpt: "First impressions of the ESP32-C6 DevKitC-1, from setup and documentation to the usual early mistakes during environment installation."
+description: "First impressions of the ESP32-C6 DevKitC-1, from setup and documentation to the usual early mistakes during environment installation."
 ---
 
 While I'm waiting for my parts to reach in, I thought it would be fun to try my hands at my new board: An ESP32-C6 DevKitC-1.

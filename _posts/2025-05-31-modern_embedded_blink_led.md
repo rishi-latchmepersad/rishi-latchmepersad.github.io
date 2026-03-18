@@ -1,5 +1,7 @@
 ---
 title: Low-Level LED Blinking
+excerpt: "Switching to Miro Samek's low-level embedded style and recreating an STM32 LED blink project with register-level understanding."
+description: "Switching to Miro Samek's low-level embedded style and recreating an STM32 LED blink project with register-level understanding."
 ---
 
 I decided to take a pause on Lars' video series because he was starting to use sensors in his projects. I've placed an order for some sensors 

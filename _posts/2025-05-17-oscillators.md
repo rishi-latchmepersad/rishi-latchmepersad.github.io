@@ -1,5 +1,7 @@
 ---
 title: Oscillators
+excerpt: "Following STM32World tutorials on clocks and oscillators while learning to distrust default CubeMX pin assignments."
+description: "Following STM32World tutorials on clocks and oscillators while learning to distrust default CubeMX pin assignments."
 ---
 
 This will be a fairly short post. I decided to continue with the video series by <a href="https://www.youtube.com/@stm32world">STM32World</a>, because I really think I

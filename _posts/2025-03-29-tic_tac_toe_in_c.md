@@ -1,3 +1,8 @@
+---
+excerpt: "Using a console tic-tac-toe project in C as a test run for whether embedded systems engineering feels like the right long-term path."
+description: "Using a console tic-tac-toe project in C as a test run for whether embedded systems engineering feels like the right long-term path."
+---
+
 Recently, I've begun thinking that I might actually enjoy a career in embedded systems engineering.
 
 ![Embedded image](/assets/posts/2025-03-29-tic_tac_toe_in_c/embedded_system.jpg){: width="150" }

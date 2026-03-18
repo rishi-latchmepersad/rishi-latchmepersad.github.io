@@ -1,5 +1,7 @@
 ---
 title: A Temporary Stop for Some Circuit Refreshes!
+excerpt: "Pausing the STM32 tutorial series to refresh breadboard fundamentals, resistor values, and basic circuit-building skills."
+description: "Pausing the STM32 tutorial series to refresh breadboard fundamentals, resistor values, and basic circuit-building skills."
 ---
 
 Doh! On video 4 of the playlist, CMTEQ immediately jumped into a pre-assembled circuit on a breadboard, where we would be building a binary counter.

@@ -1,4 +1,9 @@
-I haven't posted in a while, because I went on vacation! 🎉
+---
+excerpt: "A trip to Japan, a renewed interest in embedded systems, and a couple of books that helped spark the next stage of this engineering journey."
+description: "A trip to Japan, a renewed interest in embedded systems, and a couple of books that helped spark the next stage of this engineering journey."
+---
+
+I haven't posted in a while, because I went on vacation! The trip turned into a nice reset.
 
 My wife and I took a short trip to Japan. It was a ton of fun!
 

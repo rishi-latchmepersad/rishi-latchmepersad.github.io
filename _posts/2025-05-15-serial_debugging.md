@@ -1,5 +1,7 @@
 ---
 title: Serial Debugging :(
+excerpt: "A frustrating attempt to get serial debugging working over USB on an STM32 Nucleo board while adapting tutorials meant for different hardware."
+description: "A frustrating attempt to get serial debugging working over USB on an STM32 Nucleo board while adapting tutorials meant for different hardware."
 ---
 
 Well, that was terrible. I immediately regret feeling so confident in the last post. I ended up spending like 3 hours on something that should have been really simple.

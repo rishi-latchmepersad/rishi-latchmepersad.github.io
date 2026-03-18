@@ -1,5 +1,7 @@
 ---
 title: A Short Break
+excerpt: "A short life update, a lesson learned from ordering the wrong parts, and a reset on the embedded systems practice plan."
+description: "A short life update, a lesson learned from ordering the wrong parts, and a reset on the embedded systems practice plan."
 ---
 
 Wow it's been over a month since I last posted. I've mostly had life pop up recently. My birthday was on the 10th of June 🎈, so we had lots of celebrations

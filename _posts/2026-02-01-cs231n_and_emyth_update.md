@@ -1,5 +1,7 @@
 ---
 title: Completed CS231n and The EMyth Revisited!
+excerpt: "Reflections on finishing CS231n, revisiting The E-Myth, and clarifying a long-term direction in applied AI and engineering work."
+description: "Reflections on finishing CS231n, revisiting The E-Myth, and clarifying a long-term direction in applied AI and engineering work."
 ---
 
 # CS231n

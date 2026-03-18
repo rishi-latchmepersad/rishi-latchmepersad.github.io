@@ -1,5 +1,7 @@
 ---
 title: Blinky Tasks and Semaphores
+excerpt: "Using an ESP32 blinky project to understand FreeRTOS tasks, semaphores, and the shift away from a simple superloop design."
+description: "Using an ESP32 blinky project to understand FreeRTOS tasks, semaphores, and the shift away from a simple superloop design."
 ---
 
 The ESP32 is turning out to be a ton of fun. This morning, I watched two videos from EspressIf's DevCon, explaining their IOT Development Framework (ESP IDF).

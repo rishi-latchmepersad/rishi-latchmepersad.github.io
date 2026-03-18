@@ -1,5 +1,7 @@
 ---
 title: Buttons and Interrupts!
+excerpt: "Adding a BOOT button interrupt on the ESP32, then handling debouncing and ISR-to-task signaling with semaphores."
+description: "Adding a BOOT button interrupt on the ESP32, then handling debouncing and ISR-to-task signaling with semaphores."
 ---
 
 The last post ended up being really long, so I'll make this one much quicker 😀

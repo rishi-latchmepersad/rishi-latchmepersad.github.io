@@ -1,5 +1,7 @@
 ---
 title: External Interrupts
+excerpt: "Configuring a Nucleo user button as an external interrupt and seeing how event-driven inputs become useful in safety-critical systems."
+description: "Configuring a Nucleo user button as an external interrupt and seeing how event-driven inputs become useful in safety-critical systems."
 ---
 
 
