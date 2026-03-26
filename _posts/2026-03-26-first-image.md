@@ -16,6 +16,8 @@ After that, I spent a couple days just cycling through random noisy images. To f
 
 [![First Image](/assets/posts/2026-03-26-first-image/first_image.png){:width="600"}](/assets/posts/2026-03-26-first-image/first_image.png)
 
+It's an image of the board setup itself (minus the camera of course), in a 256x256 px greyscale format. It's not the highest quality, but it can work for a starting point.
+
 # Next Steps
 
 Now, I need to take a short break to finish update our temperature prediction paper and hopefully get it approved this time, but once I resume this project, I'm hoping to use the classical CV model next to take a few images of the gauge and try to infer measurements from them.
