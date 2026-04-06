@@ -29,6 +29,7 @@ Was inferred to be 31 degrees! Pretty close!
 [INFER_LOG] Logged: 2026-04-06 11:29:23,31.1
 [WATCHDOG] pulse
 ```
+
 I've made some changes to the initial image format from the last post. I now capture the image in a 224x224 colour format, since this is what MobileNetV2 was trained on, and my current model is a fine-tuned version of MobileNetV2.
 
 I've also set up the inference to run in a loop, and boot the firmware from flash instead of only loading the firmware from the PC in development mode. This means I can power the system from anywhere and it will run the inference loop without me having to keep the PC running.
