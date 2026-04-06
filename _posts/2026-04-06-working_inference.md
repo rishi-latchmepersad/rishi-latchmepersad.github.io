@@ -12,7 +12,7 @@ For example, this image:
 [![Example Image](/assets/posts/2026-04-06-working_inference/example.png){:width="600"}](/assets/posts/2026-04-06-working_inference/example.png)
 
 Was inferred to be 31 degrees! Pretty close!
-`
+```
 [CAMERA][CAPTURE] Processed ROI stats (processed-capture): roi=32x32 start=(96,96) y_min=16 y_max=61 y_mean=49.60 center8=[38,37,38,39,39,40,39,39].
 [CAMERA][CAPTURE] Saving YUV422 capture to /captured_images/capture_2026-04-06_11-29-04.yuv422 (100352 bytes)...
 [WATCHDOG] pulse
@@ -28,7 +28,7 @@ Was inferred to be 31 degrees! Pretty close!
 [INFER_LOG] Inference value: 31.2
 [INFER_LOG] Logged: 2026-04-06 11:29:23,31.1
 [WATCHDOG] pulse
-`
+```
 I've made some changes to the initial image format from the last post. I now capture the image in a 224x224 colour format, since this is what MobileNetV2 was trained on, and my current model is a fine-tuned version of MobileNetV2.
 
 I've also set up the inference to run in a loop, and boot the firmware from flash instead of only loading the firmware from the PC in development mode. This means I can power the system from anywhere and it will run the inference loop without me having to keep the PC running.
