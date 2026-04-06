@@ -38,7 +38,7 @@ I've also set up the inference to run in a loop, and boot the firmware from flas
 
 Tevin and I also finished the paper this weekend. It really reads much better now! Hopefully this one is accepted by the IEMJ. We'll have to wait a few weeks and see.
 
-![alt text](tinyml_submission_2.png)
+[![Example Image](/assets/posts/2026-04-06-working_inference/tinyml_submission_2.png){:width="600"}](/assets/posts/2026-04-06-working_inference/tinyml_submission_2.png)
 
 # Next Steps
 The biggest issue right now is that the jumper cables on the board aren't making great contact, so I need to keep wiggling them around. I need to order a solderable PCB and start mounting these components to that instead, and use solderable jumper wires as well. While I'm waiting for those parts to reach, I'll try to neaten up my code so that we can scale the firmware going forward, because right now it's a bit clunky and bloated.
