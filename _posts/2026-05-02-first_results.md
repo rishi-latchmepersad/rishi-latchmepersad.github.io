@@ -1,12 +1,12 @@
 ---
 title: First Trial Results - Classical CV vs CNN
-excerpt: "Running our first comparison between the classical computer vision baseline and our CNN-based approach on the STM32 N6."
-description: "Running our first formal comparison between the classical computer vision baseline and our CNN-based approach on the STM32 N6."
+excerpt: "Running my first comparison between the classical computer vision baseline and the CNN-based approach on the STM32 N6."
+description: "Running my first formal comparison between the classical computer vision baseline and the CNN-based approach on the STM32 N6."
 ---
 
 # Overview
 
-It's been a while since the last update, but we've made some solid progress! I finally got the whole pipeline working end-to-end on the STM32 N6: capture an image from the camera, run inference, and log the results to the SD card. More importantly, I ran our first formal trial comparing two approaches side-by-side.
+It's been a while since the last update, but we've made some solid progress! I finally got the whole pipeline working end-to-end on the STM32 N6: capture an image from the camera, run inference, and log the results to the SD card. More importantly, I ran my first formal trial comparing two approaches side-by-side.
 
 Here's the current setup:
 
@@ -44,7 +44,7 @@ Some observations:
 
 - **The CNN is generally more accurate** — look at the errors for -20°C, -15°C, and -5°C. The baseline is off by 20+ degrees in some cases, while the CNN stays within a few degrees.
 - **The CNN struggles at the extremes** — at -30°C and 50°C, the CNN really leans on the calibration layer to improve its readings.
-- **Around room temperature (20-30°C), both work reasonably well** — this is where most of our training data was, so it's not surprising.
+- **Around room temperature (20-30°C), both work reasonably well** — this is where most of my training data was, so it's not surprising.
 - **The baseline has some weird outliers** — at 15°C it reads 36.4°C, which is way off. I think this is where the centroid detection gets confused by the gauge's internal humidity dial, or where the other lines on the gauge face throw the polar voting system off the needle.
 
 Overall, the CNN is the clear winner for accuracy, but it's important to implement the baseline so that we show the merits of Neural Networks properly.
