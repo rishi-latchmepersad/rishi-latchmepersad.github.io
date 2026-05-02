@@ -52,6 +52,8 @@ Some observations:
 
 Overall, the CNN is the clear winner for accuracy, but it's important to implement the baseline so that I show the merits of Neural Networks properly. After I moved the needle each time, the baseline took a lot longer to produce a reasonable value. In some rows, you'll see that it never produced anything reasonable. The CNN immediately produced something in the realm of possibility.
 
+Across this controlled trial, the classical CV baseline achieved approximately 10.9 °C MAE, while the CNN achieved approximately 2.4 °C MAE, reducing average error by about 78%. I believe we can improve this further and make it more generalizable to more gauges in different (non-ideal) conditions.
+
 # What's Next
 
 There's still plenty to do:
