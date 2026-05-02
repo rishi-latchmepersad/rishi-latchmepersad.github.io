@@ -45,12 +45,12 @@ I ran a controlled trial across the full temperature range (-30°C to 50°C) und
 
 Some observations:
 
-- **The CNN is generally more accurate** — look at the errors for -20°C, -15°C, and -5°C. The baseline is off by 20+ degrees in some cases, while the CNN stays within a few degrees.
-- **The CNN struggles at the extremes** — at -30°C and 50°C, the CNN really leans on the calibration layer to improve its readings.
+- **The CNN is generally more accurate** - look at the errors for -20°C, -15°C, and -5°C. The baseline is off by 20+ degrees in some cases, while the CNN stays within a few degrees.
+- **The CNN struggles at the extremes** - at -30°C and 50°C, the CNN really leans on the calibration layer to improve its readings.
 - **Around room temperature (20-30°C), both work reasonably well** — this is where most of my training data was, so it's not surprising.
-- **The baseline has some weird outliers** — at 15°C it reads 36.4°C, which is way off. I think this is where the centroid detection gets confused by the gauge's internal humidity dial, or where the other lines on the gauge face throw the polar voting system off the needle.
+- **The baseline has some weird outliers** - at 15°C it reads 36.4°C, which is way off. I think this is where the centroid detection gets confused by the gauge's internal humidity dial, or where the other lines on the gauge face throw the polar voting system off the needle.
 
-Overall, the CNN is the clear winner for accuracy, but it's important to implement the baseline so that I show the merits of Neural Networks properly.
+Overall, the CNN is the clear winner for accuracy, but it's important to implement the baseline so that I show the merits of Neural Networks properly. After I moved the needle each time, the baseline took a lot longer to produce a reasonable value. In some rows, you'll see that it never produced anything reasonable. The CNN immediately produced something in the realm of possibility.
 
 # What's Next
 
