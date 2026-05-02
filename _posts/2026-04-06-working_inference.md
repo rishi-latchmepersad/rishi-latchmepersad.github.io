@@ -2,6 +2,8 @@
 title: Our first samples of inference
 excerpt: "The first examples of inference from our STM32 N6 board and our analog temperature gauge."
 description: "The first examples of inference from our STM32 N6 board and our analog temperature gauge."
+header:
+  teaser: /assets/posts/2026-04-06-working_inference/example.png
 ---
 
 # Overview

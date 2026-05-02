@@ -3,6 +3,8 @@ title: First Trial Results - Classical CV vs CNN
 excerpt: "Running my first comparison between the classical computer vision baseline and the CNN-based approach on the STM32 N6."
 description: "Running my first formal comparison between the classical computer vision baseline and the CNN-based approach on the STM32 N6."
 classes: wide
+header:
+  teaser: /assets/posts/2026-05-02-first_results/setup.jpg
 ---
 
 # Overview

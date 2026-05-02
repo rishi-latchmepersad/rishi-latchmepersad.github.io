@@ -2,6 +2,8 @@
 title: Some Surprising Twists on Our First ML Paper
 excerpt: "Our first ML paper was rejected, but detailed reviewer feedback and an extended deadline gave us a second chance to redesign the model and try again."
 description: "Our first ML paper was rejected, but detailed reviewer feedback and an extended deadline gave us a second chance to redesign the model and try again."
+header:
+  teaser: /assets/posts/2026-03-12-surprising-twists-on-our-paper/wije_feedback.JPG
 ---
 
 # Intro

@@ -2,6 +2,8 @@
 title: My First On-Device Image!
 excerpt: "The very first image I've been able to capture with my B-CAMS-IMX camera on my STM32 N6 board."
 description: "The very first image I've been able to capture with my B-CAMS-IMX camera on my STM32 N6 board."
+header:
+  teaser: /assets/posts/2026-03-26-first-image/first_image.png
 ---
 
 # Overview

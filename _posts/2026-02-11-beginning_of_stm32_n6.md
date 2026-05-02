@@ -2,6 +2,8 @@
 title: My First Foray Into STM32 N6 Development
 excerpt: "First impressions of the STM32 N6 Nucleo board, from the new CubeMX workflow to firmware signing, BOOT1 handling, and ThreadX."
 description: "First impressions of the STM32 N6 Nucleo board, from the new CubeMX workflow to firmware signing, BOOT1 handling, and ThreadX."
+header:
+  teaser: /assets/posts/2026-02-11-beginning_of_stm32_n6/cubemx_interface.JPG
 ---
 
 # Intro
