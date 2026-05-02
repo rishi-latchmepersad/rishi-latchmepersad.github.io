@@ -1,11 +1,11 @@
 ---
 title: First Trial Results - Classical CV vs CNN
 excerpt: "Running my first comparison between the classical computer vision baseline and the CNN-based approach on the STM32 N6."
-description: "Running my first formal comparison between the classical computer vision baseline and the CNN-based approach on the STM32 N6."classes: wide---
+description: "Running my first formal comparison between the classical computer vision baseline and the CNN-based approach on the STM32 N6."
 
 # Overview
 
-It's been a while since the last update, but we've made some solid progress! I finally got the whole pipeline working end-to-end on the STM32 N6: capture an image from the camera, run inference, and log the results to the SD card. More importantly, I ran my first formal trial comparing two approaches side-by-side.
+It's been a while since the last update, but I've made some solid progress! I finally got the whole pipeline working end-to-end on the STM32 N6: capture an image from the camera, run inference, and log the results to the SD card. More importantly, I ran my first formal trial comparing two approaches side-by-side.
 
 Here's the current setup:
 
@@ -15,7 +15,7 @@ The STM32 N6 board is at the bottom, connected to a breadboard with the SD card 
 
 # Two Approaches
 
-We're running two different algorithms on the same hardware, to systematically measure how well (or poorly) we're doing:
+I'm running two different algorithms on the same hardware, to systematically measure how well (or poorly) I'm doing:
 
 ## 1. Classical CV Baseline
 
@@ -35,7 +35,7 @@ The OBB (Oriented Bounding Box) localizer was a bit tricky to get working, but i
 
 # The Results
 
-I ran a controlled trial across the full temperature range (-30°C to 50°C) under ideal conditions: camera 15cm from the gauge, bright room (62 lux), no occlusion or dirt. Here's what we got:
+I ran a controlled trial across the full temperature range (-30°C to 50°C) under ideal conditions: camera 15cm from the gauge, bright room (62 lux), no occlusion or dirt. Here's what I got:
 
 [![Trial 1 Results](/assets/posts/2026-05-02-first_results/trial_1_results.JPG){:width="100%"}](/assets/posts/2026-05-02-first_results/trial_1_results.JPG)
 
@@ -46,7 +46,7 @@ Some observations:
 - **Around room temperature (20-30°C), both work reasonably well** — this is where most of my training data was, so it's not surprising.
 - **The baseline has some weird outliers** — at 15°C it reads 36.4°C, which is way off. I think this is where the centroid detection gets confused by the gauge's internal humidity dial, or where the other lines on the gauge face throw the polar voting system off the needle.
 
-Overall, the CNN is the clear winner for accuracy, but it's important to implement the baseline so that we show the merits of Neural Networks properly.
+Overall, the CNN is the clear winner for accuracy, but it's important to implement the baseline so that I show the merits of Neural Networks properly.
 
 # What's Next
 
@@ -56,7 +56,7 @@ There's still plenty to do:
 2. **Test under non-ideal conditions** - different lighting, camera angles, dust on the gauge, etc.
 3. **Hardware cleanup** - those jumper cables are still flaky. I need swap them out to proper dupont cables, and eventually get a proper PCB made and solder everything down.
 4. **ViT** - I believe a Vision Transformer model may also be a viable candidate to do this task on this board. I want to try to implement it and see.
-5. **NPU vs CPU** - I want to test to what extend the NPU speeds up inference. There should be a compilation flag we can set to disable it.
+5. **NPU vs CPU** - I want to test to what extend the NPU speeds up inference. There should be a compilation flag I can set to disable it.
 6. **Proper power measurement** - I just bought an INA219 chip and a USB A cable. I want to reroute the power to the board through this chip, so that I can sample power quickly while inference is being performed. This will allow me to compare the power usage of each model, compare the NPU vs CPU in terms of power usage etc.
 
 More updates soon!
