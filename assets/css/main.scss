@@ -30,3 +30,30 @@ color:white;
 .page__content{
     font-size:0.8em;
 }
+// Homepage hero
+.home-hero { --ink:#f5f7f3; --muted:#a9b8b4; --teal:#27b4ac; --amber:#f1b35b; position:relative; display:grid; grid-template-columns:minmax(0,1.02fr) minmax(320px,.98fr); gap:clamp(2rem,6vw,6rem); align-items:center; min-height:560px; margin:-1.5rem -2rem 3.25rem; padding:clamp(3rem,7vw,6rem) clamp(2rem,7vw,7rem); overflow:hidden; color:var(--ink); background:#102b32; isolation:isolate; }
+.home-hero::before { position:absolute; inset:0; z-index:-2; background:radial-gradient(circle at 75% 42%,rgba(39,180,172,.22),transparent 34%),linear-gradient(135deg,#102b32 0%,#10232d 56%,#171d2c 100%); content:""; }
+.home-hero::after { position:absolute; inset:0; z-index:-1; background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px); background-size:42px 42px; mask-image:linear-gradient(90deg,black,transparent 75%); content:""; }
+.home-hero__copy { max-width:680px; }
+.home-hero__eyebrow { margin:0 0 1.25rem; color:var(--amber); font:700 .72rem/1.2 ui-monospace,SFMono-Regular,Consolas,monospace; letter-spacing:.16em; text-transform:uppercase; }
+.home-hero__signal { display:inline-block; width:.5rem; height:.5rem; margin-right:.55rem; border-radius:50%; background:var(--teal); box-shadow:0 0 0 .25rem rgba(39,180,172,.15); }
+.home-hero h1 { max-width:12ch; margin:0; color:var(--ink); font-size:clamp(2.8rem,6vw,5.8rem); letter-spacing:-.055em; line-height:.94; }
+.home-hero h1 em { color:var(--teal); font-style:normal; }
+.home-hero__lede { max-width:39rem; margin:1.75rem 0 0; color:var(--muted); font-size:clamp(1rem,1.5vw,1.25rem); line-height:1.6; }
+.home-hero__actions { display:flex; flex-wrap:wrap; gap:1.25rem; align-items:center; margin-top:2rem; }
+.home-hero__button { display:inline-flex; gap:.8rem; align-items:center; padding:.9rem 1.15rem; border:1px solid var(--teal); border-radius:3px; color:#09272c; background:var(--teal); font-weight:800; text-decoration:none; transition:transform .2s ease,background .2s ease; }
+.home-hero__button:hover,.home-hero__button:focus { color:#09272c; background:#79e0d5; transform:translateY(-2px); text-decoration:none; }
+.home-hero__quiet-link { color:var(--ink); font-size:.9rem; text-decoration:underline; text-underline-offset:.25rem; }
+.home-hero__meta { display:flex; flex-wrap:wrap; gap:1rem 1.5rem; margin-top:3.25rem; color:var(--muted); font:.7rem/1.4 ui-monospace,SFMono-Regular,Consolas,monospace; text-transform:uppercase; }
+.home-hero__meta b { margin-right:.35rem; color:var(--amber); }
+.home-hero__visual { position:relative; min-height:390px; border:1px solid rgba(125,229,216,.36); border-radius:4px; background:#152f37; box-shadow:18px 18px 0 rgba(8,17,28,.24); overflow:hidden; }
+.home-hero__visual-grid { position:absolute; inset:0; background-image:linear-gradient(rgba(125,229,216,.12) 1px,transparent 1px),linear-gradient(90deg,rgba(125,229,216,.12) 1px,transparent 1px); background-size:28px 28px; opacity:.4; }
+.home-hero__sprite { position:absolute; inset:8% 7%; background-image:url('/assets/hero-field-engineer-sheet.png'); background-position:0 0; background-repeat:no-repeat; background-size:200% 200%; image-rendering:pixelated; animation:field-walk 1.4s steps(1,end) infinite; }
+.home-hero__readout { position:absolute; left:1rem; bottom:1rem; display:grid; gap:.3rem; padding:.7rem .8rem; color:#d9eeea; background:rgba(7,20,28,.84); font:.6rem/1.2 ui-monospace,SFMono-Regular,Consolas,monospace; letter-spacing:.08em; }
+.home-hero__readout strong { color:var(--amber); font-size:.72rem; letter-spacing:0; }
+.home-hero__readout-dot { display:inline-block; width:.45rem; height:.45rem; margin-right:.35rem; border-radius:50%; background:#76e3aa; box-shadow:0 0 8px #76e3aa; }
+.home-hero__plant-label { position:absolute; top:1rem; right:1rem; color:rgba(217,238,234,.7); font:.58rem/1 ui-monospace,SFMono-Regular,Consolas,monospace; letter-spacing:.1em; }
+@keyframes field-walk { 0%,24%{background-position:0 0} 25%,49%{background-position:100% 0} 50%,74%{background-position:0 100%} 75%,100%{background-position:100% 100%} }
+@media (max-width:64em) { .home-hero { grid-template-columns:1fr; gap:2.5rem; } .home-hero h1 { max-width:15ch; } .home-hero__visual { min-height:330px; max-width:620px; } }
+@media (max-width:37.5em) { .home-hero { margin-inline:-1rem; padding-inline:1.25rem; } .home-hero__visual { min-height:280px; } .home-hero__meta { margin-top:2.25rem; } }
+@media (prefers-reduced-motion:reduce) { .home-hero__sprite { animation:none; background-position:0 0; } .home-hero__button { transition:none; } }
