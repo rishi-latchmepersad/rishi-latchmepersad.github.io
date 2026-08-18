@@ -58,3 +58,14 @@ body { color:var(--site-ink); background:var(--site-paper); }
 .layout--home .page__footer { background:#edf3f1; color:var(--site-muted); border-top:1px solid var(--site-line); }
 @media (max-width:63.999em) { .initial-content { padding-top:1.5rem; } .layout--home .sidebar { margin-bottom:2rem; } }
 @media (max-width:37.5em) { .layout--home .sidebar { padding:1.15rem; border-radius:12px; } .layout--home .list__item { padding:1.25rem 0; } }
+
+// Full-width layout and a light aqua wash
+:root { --site-wash:#eaf5f3; --site-tint:#d7efec; }
+html, body { background:var(--site-wash); }
+.masthead { background:var(--site-tint); border-bottom-color:#b9deda; }
+.layout--home #main { width:100%; max-width:none; padding-inline:clamp(1rem,2.5vw,2.5rem); }
+.layout--home .archive__subtitle { color:var(--site-teal-dark); }
+.layout--home .archive__item-title a:hover { color:var(--site-teal-dark); }
+.layout--home .sidebar { box-shadow:0 10px 28px rgba(20,100,96,.08); }
+.layout--home .list__item { border-bottom-color:#c9e1de; }
+@media (min-width:80em) { .layout--home .archive { width:calc(100% - 300px); padding-inline-end:300px; } }
