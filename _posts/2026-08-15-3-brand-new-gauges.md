@@ -4,7 +4,7 @@ excerpt: "We got 3 brand new gauges, and our model pipeline generalized almost p
 classes: wide
 ---
 
-[![Three brand new gauges](/assets/posts/2026-08-15-3-brand-new-gauges/image_of_gauges.jpg){:width="100%"}](/assets/posts/2026-08-15-3-brand-new-gauges/image_of_gauges.jpg)
+[![Three brand new gauges](/assets/posts/2026-08-15-3-brand-new-gauges/image_of_gauges.jpg){:width="600"}](/assets/posts/2026-08-15-3-brand-new-gauges/image_of_gauges.jpg)
 
 # Intro 
 
@@ -40,7 +40,7 @@ We can see that the models are generally able to track the positions of the need
 
 The biggest reason for this good generalizable performance is because of the size of the training dataset. I was able to assemble over 8000 images of a diverse array of gauges. In each image, I labelled the gauge face, the needle center and the needle tip. I then trained a CNN to learn the features that would enable it to first find the gauge face from the entire photograph, then to crop the photo to that gauge face, then to pass this cropped image to a second model that would find the needle center and tip in the cropped photo. Seems that it's holding up pretty well so far!
 
-[![CNN model process diagram](/assets/posts/2026-08-15-3-brand-new-gauges/process_diagrams-CNN_Model_Process.png){:width="100%"}](/assets/posts/2026-08-15-3-brand-new-gauges/process_diagrams-CNN_Model_Process.png)
+[![CNN model process diagram](/assets/posts/2026-08-15-3-brand-new-gauges/process_diagrams-CNN_Model_Process.png){:width="600"}](/assets/posts/2026-08-15-3-brand-new-gauges/process_diagrams-CNN_Model_Process.png)
 
 
 # Next Steps
