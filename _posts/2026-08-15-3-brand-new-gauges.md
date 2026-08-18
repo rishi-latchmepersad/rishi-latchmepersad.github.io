@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single-wide
 title: "3 brand new gauges"
 excerpt: "We got 3 brand new gauges, and our model pipeline generalized almost perfectly to them."
 ---
