@@ -1,7 +1,7 @@
 ---
-layout: single-wide
 title: "3 brand new gauges"
 excerpt: "We got 3 brand new gauges, and our model pipeline generalized almost perfectly to them."
+classes: wide
 ---
 
 [![Three brand new gauges](/assets/posts/2026-08-15-3-brand-new-gauges/image_of_gauges.jpg){:width="100%"}](/assets/posts/2026-08-15-3-brand-new-gauges/image_of_gauges.jpg)
