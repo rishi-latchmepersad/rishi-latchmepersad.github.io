@@ -110,7 +110,7 @@ html, body { color:var(--ref-ink); background:var(--ref-paper); }
 // Pixel-art homepage identity
 .home-pixel-hero { position:relative; min-height:390px; margin:0; overflow:hidden; border-bottom:2px solid var(--ref-line); background:#12333a; isolation:isolate; }
 .home-pixel-hero__art { position:absolute; inset:0; z-index:0; background-image:url('/assets/hero-field-engineer-sheet.png'); background-position:0 0; background-repeat:no-repeat; background-size:200% 200%; image-rendering:pixelated; animation:home-pixel-frames 1.6s steps(1,end) infinite; }
-.home-pixel-hero__shade { position:absolute; inset:0; z-index:1; background:linear-gradient(90deg,rgba(9,28,34,.94) 0%,rgba(9,28,34,.76) 37%,rgba(9,28,34,.15) 72%,rgba(9,28,34,.36) 100%),linear-gradient(0deg,rgba(9,28,34,.36),transparent 50%); }
+.home-pixel-hero__shade { position:absolute; inset:0; z-index:1; background:linear-gradient(90deg,rgba(9,28,34,.70) 0%,rgba(9,28,34,.57) 37%,rgba(9,28,34,.11) 72%,rgba(9,28,34,.27) 100%),linear-gradient(0deg,rgba(9,28,34,.27),transparent 50%); }
 .home-pixel-hero::after { position:absolute; inset:0; z-index:3; background-image:linear-gradient(rgba(235,255,246,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(235,255,246,.08) 1px,transparent 1px); background-size:32px 32px; opacity:.35; pointer-events:none; content:""; }
 .home-pixel-hero__content { position:relative; z-index:4; max-width:660px; padding:clamp(3rem,7vw,6rem) clamp(1.5rem,7vw,7rem); }
 .home-pixel-hero__kicker { display:flex; gap:.65rem; align-items:center; margin:0 0 1.2rem; color:#e7f58e; font:700 .72rem/1.2 ui-monospace,SFMono-Regular,Consolas,monospace; letter-spacing:.13em; text-transform:uppercase; }
@@ -162,17 +162,12 @@ html, body { color:var(--ref-ink); background:var(--ref-paper); }
   opacity:.9;
 }
 .layout--home .author__urls { padding-bottom:5.25rem; }
-.layout--home .author__flora svg {
+.layout--home .author__flora img {
   display:block;
   width:100%;
   height:100%;
+  object-fit:contain;
 }
-.layout--home .author__flora-ground,
-.layout--home .author__flora-stem { fill:var(--ref-ink); }
-.layout--home .author__flora-leaf--mint { fill:#4f9b72; }
-.layout--home .author__flora-leaf--lime { fill:var(--ref-lime); }
-.layout--home .author__flora-flower { fill:var(--ref-coral); }
-.layout--home .author__flora-flower-center { fill:var(--ref-lime); }
 .layout--home .archive__subtitle { margin-bottom:.75rem; font-size:clamp(1.7rem,3vw,2.7rem); }
 .layout--home .list__item { margin-bottom:.9rem; padding:1.1rem 1.2rem 1.2rem; }
 .layout--home .archive__item-title { font-size:clamp(1.15rem,2vw,1.8rem); }
