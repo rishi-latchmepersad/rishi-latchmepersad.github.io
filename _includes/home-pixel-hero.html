@@ -1,15 +1,13 @@
 <section class="home-pixel-hero" aria-labelledby="home-pixel-hero-title">
-  <div class="home-pixel-hero__art" aria-hidden="true"></div>
+  <video class="home-pixel-hero__art" autoplay loop muted playsinline preload="metadata" poster="{{ '/assets/hero-offshore-base.png' | relative_url }}" aria-hidden="true">
+    <source src="{{ '/assets/pixel_meadow_industrial_v2.mp4' | relative_url }}" type="video/mp4">
+  </video>
   <div class="home-pixel-hero__shade" aria-hidden="true"></div>
   <div class="home-pixel-hero__content">
-    <p class="home-pixel-hero__kicker"><span></span> Chronicles of Rishi / field log</p>
-    <h1 id="home-pixel-hero-title">Building intelligence for <em>real machines.</em></h1>
-    <p class="home-pixel-hero__summary">Embedded systems, TinyML, and computer vision from the workbench to the field.</p>
-    <a class="home-pixel-hero__cta" href="{{ '/first_results/' | relative_url }}">Read the latest post <span aria-hidden="true">↗</span></a>
-  </div>
-  <div class="home-pixel-hero__status" aria-hidden="true">
-    <span class="home-pixel-hero__status-dot"></span>
-    <span>FIELD SYSTEM / ONLINE</span>
+    <h1 id="home-pixel-hero-title">Driving genuine value through <em>technology.</em></h1>
+    <p class="home-pixel-hero__summary">Researching, developing and running applications &amp; AI at the edge to simplify operations and improve reliability &amp; safety in industrial operations</p>
+    {% assign latest_post = site.posts | sort: 'date' | reverse | first %}
+    <a class="home-pixel-hero__cta" href="{{ latest_post.url | relative_url }}">Read the latest post <span aria-hidden="true">↗</span></a>
   </div>
   <div class="home-pixel-hero__coords" aria-hidden="true">10.654°N / 61.501°W</div>
 </section>

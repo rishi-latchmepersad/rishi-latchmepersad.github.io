@@ -127,3 +127,65 @@ html, body { color:var(--ref-ink); background:var(--ref-paper); }
 @keyframes home-pixel-frames { 0%,24% { background-position:0 0; } 25%,49% { background-position:100% 0; } 50%,74% { background-position:0 100%; } 75%,100% { background-position:100% 100%; } }
 @media (max-width:48em) { .home-pixel-hero { min-height:430px; } .home-pixel-hero__content { padding:3rem 1.25rem 2rem; } .home-pixel-hero h1 { max-width:10ch; font-size:clamp(2.75rem,13vw,4.8rem); } .home-pixel-hero__summary { max-width:22rem; } .home-pixel-hero__status { left:1.25rem; right:auto; bottom:1rem; } .home-pixel-hero__coords { top:auto; right:1.25rem; bottom:1.25rem; } }
 @media (prefers-reduced-motion:reduce) { .home-pixel-hero__art { animation:none; } .home-pixel-hero__cta { transition:none; } }
+
+// Compact the pixel-art homepage scale
+.initial-content { padding-top:0; }
+.masthead__inner-wrap { padding-block:.7rem; }
+.masthead .site-logo img { width:1.9rem; height:1.9rem; border-radius:9px; }
+.site-title { font-size:.95rem; }
+.home-pixel-hero { min-height:275px; }
+.home-pixel-hero__content { max-width:520px; padding:2.25rem clamp(1.25rem,5vw,4.5rem); }
+.home-pixel-hero__kicker { margin-bottom:.75rem; font-size:.6rem; }
+.home-pixel-hero h1 { max-width:13ch; font-size:clamp(2rem,4.5vw,4.1rem); letter-spacing:-.065em; }
+.home-pixel-hero__summary { max-width:25rem; margin-top:1rem; font-size:.95rem; }
+.home-pixel-hero__cta { margin-top:1rem; padding:.6rem .8rem; font-size:.8rem; }
+.home-pixel-hero__status { right:clamp(1.25rem,4vw,4rem); bottom:1rem; padding:.45rem .55rem; font-size:.52rem; }
+.home-pixel-hero__coords { top:1rem; right:clamp(1.25rem,4vw,4rem); font-size:.52rem; }
+.layout--home #main { padding-top:1.5rem; }
+.layout--home .sidebar { padding:1.15rem; }
+.layout--home .archive__subtitle { margin-bottom:.75rem; font-size:clamp(1.7rem,3vw,2.7rem); }
+.layout--home .list__item { margin-bottom:.9rem; padding:1.1rem 1.2rem 1.2rem; }
+.layout--home .archive__item-title { font-size:clamp(1.15rem,2vw,1.8rem); }
+.layout--home .archive__item-excerpt { font-size:.9rem; }
+@media (max-width:48em) { .home-pixel-hero { min-height:320px; } .home-pixel-hero__content { padding:2rem 1.25rem 1.5rem; } .home-pixel-hero h1 { max-width:12ch; font-size:clamp(2rem,10vw,3.5rem); } .home-pixel-hero__status { left:1.25rem; right:auto; bottom:.8rem; } .home-pixel-hero__coords { top:auto; right:1.25rem; bottom:1rem; } }
+
+// Use a real animated GIF for the field engineer; avoid background-position frame jumps.
+.home-pixel-hero__art {
+  background-image:url('/assets/hero-field-engineer.gif?v=2');
+  background-position:center;
+  background-size:100% 100%;
+  animation:none;
+}
+
+// Render the animated field art as a native image so browsers animate it reliably.
+.home-pixel-hero__art {
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:fill;
+  background:none;
+}
+
+
+// Use the uploaded industrial meadow video as the hero background.
+.home-pixel-hero__art {
+  object-fit:cover;
+  object-position:center center;
+  image-rendering:auto;
+}
+
+
+// Make the sidebar profile image square.
+.layout--home .author__avatar img {
+  border-radius:14px;
+}
+
+
+// Center the square sidebar profile image.
+.layout--home .author__avatar {
+  text-align:center;
+}
+.layout--home .author__avatar img {
+  display:block;
+  margin-inline:auto;
+}
