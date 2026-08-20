@@ -189,3 +189,207 @@ html, body { color:var(--ref-ink); background:var(--ref-paper); }
   display:block;
   margin-inline:auto;
 }
+
+// Homepage footer matches the editorial template.
+.layout--home .page__footer {
+  margin-top:3rem;
+  padding:0;
+  color:var(--ref-ink);
+  background:var(--ref-mint);
+  border-top:2px solid var(--ref-line);
+}
+.layout--home .page__footer a { color:var(--ref-ink); }
+.layout--home .page__footer-follow,
+.layout--home .page__footer-copyright {
+  max-width:1280px;
+  margin-inline:auto;
+  padding-inline:clamp(1rem,3vw,3rem);
+}
+.layout--home .page__footer-follow {
+  padding-top:1.25rem;
+  padding-bottom:1.25rem;
+  border-bottom:0;
+}
+.layout--home .page__footer-follow ul {
+  display:flex;
+  flex-wrap:wrap;
+  gap:.6rem;
+  margin:0;
+}
+.layout--home .page__footer-follow li { margin:0; }
+.layout--home .page__footer-follow a {
+  display:inline-flex;
+  align-items:center;
+  gap:.4rem;
+  padding:.45rem .7rem;
+  border:2px solid var(--ref-line);
+  border-radius:10px;
+  color:var(--ref-ink);
+  background:var(--ref-mint);
+  font-size:.72rem;
+  font-weight:800;
+  text-decoration:none;
+}
+.layout--home .page__footer-follow a:hover {
+  color:var(--ref-ink);
+  background:var(--ref-lime);
+}
+.layout--home .page__footer-copyright {
+  padding-top:1.25rem;
+  padding-bottom:1.5rem;
+  color:var(--ref-ink);
+  font-size:.78rem;
+  font-weight:700;
+}
+
+// Compact footer and a clearer sidebar rhythm.
+.layout--home .page__footer {
+  margin-top:1.5rem;
+}
+.layout--home .page__footer footer {
+  margin-top:0;
+  padding-bottom:.75rem;
+}
+.layout--home .page__footer-follow {
+  padding-top:.6rem;
+  padding-bottom:.6rem;
+}
+.layout--home .page__footer-copyright {
+  padding-top:.65rem;
+  padding-bottom:.75rem;
+}
+.layout--home .author__urls {
+  display:flex;
+  flex-direction:column;
+  gap:.2rem;
+}
+.layout--home .author__urls li {
+  margin:0;
+}
+.layout--home .author__urls a {
+  margin:0;
+  padding-block:.3rem;
+}
+.layout--home .author__urls .author__location {
+  margin-bottom:.55rem;
+  padding-bottom:.7rem;
+  border-bottom:1px solid #d6d3ca;
+}
+
+// Scroll-reactive circuit board rail.
+.home-circuit-rail {
+  display:none;
+}
+@media (min-width:80em) {
+  .layout--home #main { position:relative; }
+  .layout--home .home-circuit-rail {
+    display:block;
+    position:absolute;
+    top:1.5rem;
+    right:clamp(1rem,3vw,3rem);
+    width:clamp(110px,10vw,150px);
+    height:calc(100% - 1.5rem);
+    pointer-events:none;
+  }
+  .home-circuit-board {
+    position:sticky;
+    top:6rem;
+    width:100%;
+    overflow:hidden;
+    border:2px solid var(--ref-line);
+    border-radius:18px;
+    background:var(--ref-mint);
+    box-shadow:6px 6px 0 var(--ref-line);
+  }
+  .home-circuit-board img {
+    display:block;
+    width:100%;
+    height:clamp(360px,62vh,720px);
+    object-fit:fill;
+  }
+  .home-circuit-signal {
+    position:absolute;
+    top:8px;
+    left:50%;
+    width:14px;
+    height:14px;
+    border:3px solid var(--ref-line);
+    border-radius:4px;
+    background:var(--ref-lime);
+    box-shadow:0 0 0 5px rgba(231,245,142,.22), 0 0 18px rgba(231,245,142,.9);
+    transform:translate3d(-50%,var(--signal-y,0),0);
+    transition:transform .12s linear;
+  }
+  .home-circuit-signal span {
+    display:block;
+    width:100%;
+    height:100%;
+    background:var(--ref-lime);
+  }
+}
+@media (prefers-reduced-motion:reduce) {
+  .home-circuit-signal { transition:none; }
+}
+
+// Full-viewport transparent circuit board treatment.
+.home-circuit-rail {
+  display:none;
+}
+@media (min-width:80em) {
+  .layout--home .home-circuit-rail {
+    display:flex;
+    position:absolute;
+    top:1.5rem;
+    right:clamp(1rem,3vw,3rem);
+    bottom:auto;
+    height:calc(100vh - 8rem);
+    width:22vw;
+    max-width:320px;
+    align-items:flex-start;
+    justify-content:center;
+    pointer-events:none;
+    z-index:1;
+  }
+  .home-circuit-board {
+    position:sticky;
+    width:100%;
+    height:auto;
+    max-height:100%;
+    top:6rem;
+    overflow:visible;
+    border:0;
+    border-radius:0;
+    background:transparent;
+    box-shadow:none;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .layout--home .home-circuit-rail.is-active {
+    position:fixed;
+    top:5.5rem;
+    right:clamp(1rem,3vw,3rem);
+    bottom:1.5rem;
+    height:auto;
+    align-items:center;
+  }
+  .layout--home .home-circuit-rail.is-active .home-circuit-board {
+    position:relative;
+    top:0;
+  }
+  .home-circuit-board img {
+    display:block;
+    width:100%;
+    height:auto;
+    max-width:100%;
+    max-height:100%;
+    object-fit:contain;
+  }
+  .home-circuit-signal {
+    top:8px;
+    left:50%;
+  }
+}
+@media (max-width:79.999em) {
+  .home-circuit-rail { display:none; }
+}

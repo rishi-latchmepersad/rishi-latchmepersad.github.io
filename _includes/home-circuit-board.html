@@ -1,0 +1,37 @@
+<aside class="home-circuit-rail" aria-label="Animated circuit board">
+  <div class="home-circuit-board">
+    <img src="{{ '/assets/circuit board.png' | relative_url }}" alt="" aria-hidden="true">
+    <span class="home-circuit-signal" aria-hidden="true"><span></span></span>
+  </div>
+</aside>
+
+<script>
+(function () {
+  var rail = document.querySelector('.home-circuit-rail');
+  var board = document.querySelector('.home-circuit-board');
+  var signal = document.querySelector('.home-circuit-signal');
+  var hero = document.querySelector('.home-pixel-hero');
+  if (!rail || !board || !signal) return;
+
+  var scheduled = false;
+  function updateSignal() {
+    scheduled = false;
+    if (hero) {
+      var rootSize = parseFloat(getComputedStyle(document.documentElement).fontSize) || 16;
+      rail.classList.toggle('is-active', hero.getBoundingClientRect().bottom <= rootSize * 5);
+    }
+    var maxScroll = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+    var progress = Math.min(1, Math.max(0, window.scrollY / maxScroll));
+    var travel = Math.max(0, board.offsetHeight - signal.offsetHeight - 16);
+    signal.style.setProperty('--signal-y', Math.round(progress * travel) + 'px');
+  }
+  function scheduleUpdate() {
+    if (scheduled) return;
+    scheduled = true;
+    window.requestAnimationFrame(updateSignal);
+  }
+  window.addEventListener('scroll', scheduleUpdate, { passive: true });
+  window.addEventListener('resize', scheduleUpdate);
+  updateSignal();
+}());
+</script>
