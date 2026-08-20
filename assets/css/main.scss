@@ -143,6 +143,36 @@ html, body { color:var(--ref-ink); background:var(--ref-paper); }
 .home-pixel-hero__coords { top:1rem; right:clamp(1.25rem,4vw,4rem); font-size:.52rem; }
 .layout--home #main { padding-top:1.5rem; }
 .layout--home .sidebar { padding:1.15rem; }
+.layout--home .sidebar { position:relative; overflow:hidden; }
+@media (min-width:80em) {
+  .layout--home #main { align-items:start; }
+  .layout--home .sidebar {
+    position:sticky;
+    top:calc(50vh - 18rem);
+    align-self:start;
+  }
+}
+.layout--home .author__flora {
+  position:absolute;
+  right:1rem;
+  bottom:1rem;
+  left:1rem;
+  height:4.5rem;
+  pointer-events:none;
+  opacity:.9;
+}
+.layout--home .author__urls { padding-bottom:5.25rem; }
+.layout--home .author__flora svg {
+  display:block;
+  width:100%;
+  height:100%;
+}
+.layout--home .author__flora-ground,
+.layout--home .author__flora-stem { fill:var(--ref-ink); }
+.layout--home .author__flora-leaf--mint { fill:#4f9b72; }
+.layout--home .author__flora-leaf--lime { fill:var(--ref-lime); }
+.layout--home .author__flora-flower { fill:var(--ref-coral); }
+.layout--home .author__flora-flower-center { fill:var(--ref-lime); }
 .layout--home .archive__subtitle { margin-bottom:.75rem; font-size:clamp(1.7rem,3vw,2.7rem); }
 .layout--home .list__item { margin-bottom:.9rem; padding:1.1rem 1.2rem 1.2rem; }
 .layout--home .archive__item-title { font-size:clamp(1.15rem,2vw,1.8rem); }
@@ -309,15 +339,15 @@ html, body { color:var(--ref-ink); background:var(--ref-paper); }
   }
   .home-circuit-signal {
     position:absolute;
-    top:8px;
-    left:50%;
+    top:var(--signal-y, 0%);
+    left:var(--signal-x, 50%);
     width:14px;
     height:14px;
     border:3px solid var(--ref-line);
     border-radius:4px;
     background:var(--ref-lime);
     box-shadow:0 0 0 5px rgba(231,245,142,.22), 0 0 18px rgba(231,245,142,.9);
-    transform:translate3d(-50%,var(--signal-y,0),0);
+    transform:translate3d(-50%,-50%,0);
     transition:transform .12s linear;
   }
   .home-circuit-signal span {
@@ -326,9 +356,18 @@ html, body { color:var(--ref-ink); background:var(--ref-paper); }
     height:100%;
     background:var(--ref-lime);
   }
+  .home-circuit-trace {
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    pointer-events:none;
+    visibility:hidden;
+  }
 }
 @media (prefers-reduced-motion:reduce) {
   .home-circuit-signal { transition:none; }
+  .home-circuit-board { transition:none !important; }
 }
 
 // Full-viewport transparent circuit board treatment.
@@ -364,6 +403,7 @@ html, body { color:var(--ref-ink); background:var(--ref-paper); }
     display:flex;
     align-items:center;
     justify-content:center;
+    will-change:transform;
   }
   .layout--home .home-circuit-rail.is-active {
     position:fixed;
@@ -386,8 +426,8 @@ html, body { color:var(--ref-ink); background:var(--ref-paper); }
     object-fit:contain;
   }
   .home-circuit-signal {
-    top:8px;
-    left:50%;
+    top:var(--signal-y, 0%);
+    left:var(--signal-x, 50%);
   }
 }
 @media (max-width:79.999em) {

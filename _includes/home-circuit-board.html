@@ -1,6 +1,9 @@
 <aside class="home-circuit-rail" aria-label="Animated circuit board">
   <div class="home-circuit-board">
     <img src="{{ '/assets/circuit board.png' | relative_url }}" alt="" aria-hidden="true">
+    <svg class="home-circuit-trace" viewBox="0 0 1024 1536" preserveAspectRatio="none" aria-hidden="true">
+      <path class="home-circuit-trace-path" d="M470 34 C470 145 470 190 530 232 C585 270 575 320 530 365 C478 416 495 470 552 520 C584 558 576 615 530 657 C475 704 474 754 530 804 C575 845 570 900 500 955 C475 1000 500 1055 550 1100 C580 1140 550 1185 505 1225 C475 1260 500 1300 525 1335 C545 1370 530 1425 530 1465"></path>
+    </svg>
     <span class="home-circuit-signal" aria-hidden="true"><span></span></span>
   </div>
 </aside>
@@ -10,20 +13,45 @@
   var rail = document.querySelector('.home-circuit-rail');
   var board = document.querySelector('.home-circuit-board');
   var signal = document.querySelector('.home-circuit-signal');
+  var trace = document.querySelector('.home-circuit-trace-path');
   var hero = document.querySelector('.home-pixel-hero');
-  if (!rail || !board || !signal) return;
+  if (!rail || !board || !signal || !trace) return;
 
   var scheduled = false;
+  var railIsActive = rail.classList.contains('is-active');
+
+  function setRailMode(nextIsActive) {
+    if (nextIsActive === railIsActive) return;
+
+    // Preserve the board's viewport position while the rail changes from
+    // document flow to the fixed scrolling treatment.
+    var before = board.getBoundingClientRect();
+    rail.classList.toggle('is-active', nextIsActive);
+    var after = board.getBoundingClientRect();
+    var offset = before.top - after.top;
+
+    board.style.transition = 'none';
+    board.style.transform = 'translate3d(0, ' + Math.round(offset) + 'px, 0)';
+    board.offsetHeight;
+
+    window.requestAnimationFrame(function () {
+      board.style.transition = 'transform .32s cubic-bezier(.22, 1, .36, 1)';
+      board.style.transform = 'translate3d(0, 0, 0)';
+    });
+
+    railIsActive = nextIsActive;
+  }
   function updateSignal() {
     scheduled = false;
     if (hero) {
       var rootSize = parseFloat(getComputedStyle(document.documentElement).fontSize) || 16;
-      rail.classList.toggle('is-active', hero.getBoundingClientRect().bottom <= rootSize * 5);
+      setRailMode(hero.getBoundingClientRect().bottom <= rootSize * 5);
     }
     var maxScroll = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
     var progress = Math.min(1, Math.max(0, window.scrollY / maxScroll));
-    var travel = Math.max(0, board.offsetHeight - signal.offsetHeight - 16);
-    signal.style.setProperty('--signal-y', Math.round(progress * travel) + 'px');
+    var point = trace.getPointAtLength(progress * trace.getTotalLength());
+    signal.style.setProperty('--signal-x', (point.x / 1024 * 100).toFixed(3) + '%');
+    signal.style.setProperty('--signal-y', (point.y / 1536 * 100).toFixed(3) + '%');
   }
   function scheduleUpdate() {
     if (scheduled) return;
